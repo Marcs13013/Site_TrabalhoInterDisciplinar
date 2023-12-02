@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .titulo1 {
+            font-size: 36px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .introducao {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin: 0% 3%;
+        }
+
+        img.tipo1 {
+            border: blue 2px solid;
+        }
+
+        .tipo2 {
+            margin: 5% 10%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+
+
+
+        .fundo {
+            width: 101%;
+            height: 100px;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('imagens/Fundo.jfif');
+            background-size: cover;
+            background-position: center;
+            margin: 0% 0% 0% -1%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .botaolateralE {
+            height: 70px;
+            width: 70px;
+            margin-top: 1%;
+            margin-left: 1%;
+            cursor: pointer;
+        }
+        
+        .barra-lateral {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            /* Posição inicial - fora da tela */
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            transition: left 0.3s ease;
+            /* Transição suave ao mudar a posição */
+            z-index: 1000;
+            /* Garante que a barra esteja acima do conteúdo */
+        }
+        .botaolateralE:hover + .barra-lateral {
+
+            left: 10;
+
+        }
+
+
+        .botaolateralD {
+            margin-top: 1%;
+            height: 85px;
+            width: 85px;
+            justify-content: right;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="fundo">
+        <img src="imagens/menu.png" class="botaolateralE" alt="">
+        <img src="imagens/casa.png" alt="" class="botaolateralD">
+
+    </div>
+
+
+    <p class="titulo1"> Seja Bem-Vindo Ao Nosso Site </p> <br>
+    <p class="introducao"> Este site foi designado para a realização do nosso trabalho interdisciplinar, onde temos como
+        base os temas: <br>
+        a empresa AT&T e a personalidade Jhon Sculley. Neste site vamos explorar a trajetória da renomada empresa
+        de telecomunicações AT&T, e também sobre o Jhon Sculley que seu legado no cenário empresarial. <br>
+
+        Navegue por nossas páginas para descobrir os momentos mais importantes que definiram a AT&T ao longo dos
+        anos,
+        desde suas origens até seu papel inovador na era digital até suas dificuldades ao longo de sua trajetória.
+        Conheça também John Sculley, sua liderança marcante na Pepsi e na Apple e seu impacto no mundo dos
+        negócios. <br>
+
+        Aqui vamos poder entender melhor as histórias e os fatos, que nos levam a
+        compreender melhor o cenário tecnológico e empresarial de hoje. </p> <br><br><br>
+
+    <p class="titulo1"> Nossa Equipe </p>
+
+    <div class="tipo2">
+        <img class="tipo1" src="imagens/Fundo.jfif" alt="">
+        <img class="tipo1" src="imagens/Fundo.jfif" alt="">
+    </div>
+    <div class="tipo2">
+        <img class="tipo1" src="imagens/Fundo.jfif" alt="">
+        <img class="tipo1" src="imagens/Fundo.jfif" alt="">
+    </div>
+
+</body>
+
+</html>
