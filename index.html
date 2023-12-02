@@ -6,97 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        body {
-            overflow-x: hidden;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-
-        }
-
-        .titulo1 {
-            font-size: 36px;
-            font-weight: bolder;
-            text-align: center;
-        }
-
-        .introducao {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 18px;
-            margin: 0% 3%;
-        }
-
-        img.tipo1 {
-            border: blue 2px solid;
-        }
-
-        .tipo2 {
-            margin: 5% 10%;
-            display: flex;
-            justify-content: space-around;
-        }
-
-
-
-
-
-        .fundo {
-            width: 101%;
-            height: 100px;
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('imagens/Fundo.jfif');
-            background-size: cover;
-            background-position: center;
-            margin: 0% 0% 0% -1%;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .botaolateralE {
-            height: 70px;
-            width: 70px;
-            margin-top: 1%;
-            margin-left: 1%;
-            cursor: pointer;
-        }
-        
-        .barra-lateral {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            /* Posição inicial - fora da tela */
-            width: 250px;
-            height: 100%;
-            background-color: #333;
-            transition: left 0.3s ease;
-            /* Transição suave ao mudar a posição */
-            z-index: 1000;
-            /* Garante que a barra esteja acima do conteúdo */
-        }
-        .botaolateralE:hover + .barra-lateral {
-
-            left: 10;
-
-        }
-
-
-        .botaolateralD {
-            margin-top: 1%;
-            height: 85px;
-            width: 85px;
-            justify-content: right;
-        }
-    </style>
-
+    <link rel="stylesheet" href="formatacao.css">
+    
 </head>
 
 <body>
 
-    <div class="fundo">
-        <img src="imagens/menu.png" class="botaolateralE" alt="">
-        <img src="imagens/casa.png" alt="" class="botaolateralD">
+<input type="checkbox" id="Menu">
 
-    </div>
+<nav>
+    <ul>
+        <li><a href="AT&T.html" class="aaa"> História da AT&T </a></li>
+        <li><a href="HistoriaSculley.html" class="aaa"> História de Jhon Sculley </a></li>
+        <li><a href="SculleyPosApple.html" class="aaa"> A Vida de Jhon Sculley Pós Apple </a></li>
+        <li><a href="MER.html" class="aaa"> MER - Banco de Dados </a></li>
+        <li><a href="jogoJS.html" class="aaa"> Jogo Em JavaScript </a></li>
+        <li><a href="index.html" class="aaa"> Página Inicial - Nossa Equipe </a></li>
+    </ul>
+</nav>
+
+
+<div class="fundo">
+    <label for="Menu">
+        <img src="imagensSite/menu.png" class="botaolateralE" alt="">
+    </label>
+<a href="index.html"><img src="imagensSite/casa.png" alt="" class="botaolateralD" ></a>
+</div>
+
 
 
     <p class="titulo1"> Seja Bem-Vindo Ao Nosso Site </p> <br>
@@ -117,12 +53,12 @@
     <p class="titulo1"> Nossa Equipe </p>
 
     <div class="tipo2">
-        <img class="tipo1" src="imagens/Fundo.jfif" alt="">
-        <img class="tipo1" src="imagens/Fundo.jfif" alt="">
+        <img class="tipo1" src="imagensSite/Fundo.jfif" alt="">
+        <img class="tipo1" src="imagensSite/Fundo.jfif" alt="">
     </div>
     <div class="tipo2">
-        <img class="tipo1" src="imagens/Fundo.jfif" alt="">
-        <img class="tipo1" src="imagens/Fundo.jfif" alt="">
+        <img class="tipo1" src="imagensSite/Fundo.jfif" alt="">
+        <img class="tipo1" src="imagensSite/Fundo.jfif" alt="">
     </div>
 
 </body>
