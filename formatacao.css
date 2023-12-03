@@ -12,14 +12,49 @@ body {
     text-align: center;
 }
 
+h2 {
+    justify-content: center;
+    text-align: center;
+}
+
 .introducao {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin: 0% 6%;
+}
+
+.introducao2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     margin: 0% 3%;
+    display: flex;
+}
+
+.introducao3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0% 5.8%;
+    margin-bottom: 8%;
+    display: flex;
 }
 
 img.tipo1 {
     border: blue 2px solid;
+    border-radius: 30%;
+}
+
+.alexander {
+    border: blue 2px solid;
+    margin: 0% 3%;
+    height: 250px;
+    border-radius: 30%;
+}
+
+.bells {
+    border: beige 1px solid;
+    margin: 0% 3%;
+    height: 250px;
+    border-radius: 20%;
 }
 
 .tipo2 {
@@ -48,6 +83,8 @@ nav {
     transition: all .8s;
 }
 
+
+
 a.aaa {
     display: block;
     padding: 20px 25px;
@@ -61,6 +98,7 @@ a.aaa:hover {
     background-color: rgba(211, 211, 211, .9);
     color: blue;
     font-size: 19px;
+
 }
 
 label {
