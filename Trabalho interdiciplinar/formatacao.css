@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
@@ -28,6 +32,7 @@ h2 {
     font-size: 18px;
     margin: 0% 3%;
     display: flex;
+    margin-right: 3%;
 }
 
 .introducao3 {
@@ -36,11 +41,21 @@ h2 {
     margin: 0% 5.8%;
     margin-bottom: 8%;
     display: flex;
+    margin-right: 3%;
 }
 
 img.tipo1 {
     border: blue 2px solid;
     border-radius: 30%;
+}
+
+
+img.entrevista {
+    border: blue 2px solid;
+    border-radius: 30%;
+    width: 250px;
+    height: 250px;
+    margin: 0% 3%;
 }
 
 .alexander {
@@ -50,11 +65,28 @@ img.tipo1 {
     border-radius: 30%;
 }
 
+.PEPSI {
+    border: blue 2px solid;
+    margin: 0% 3%;
+    height: 250px;
+    border-radius: 30%;
+    width: 300px;
+}
+
+
+.apple {
+    border: blue 2px solid;
+    margin: 0% 3%;
+    height: 250px;
+    border-radius: 30%;
+    width: 330px;
+}
+
 .bells {
-    border: beige 1px solid;
     margin: 0% 3%;
     height: 250px;
     border-radius: 20%;
+
 }
 
 .tipo2 {
@@ -74,13 +106,49 @@ input[type="checkbox"] {
     display: none;
 }
 
-nav {
-    background-color: rgba(106, 204, 250, 0.9);
+.barralateral {
+    background-color: rgba(106, 204, 250, 0.99);
     width: 250px;
     height: 600px;
     position: absolute;
     left: -300px;
     transition: all .8s;
+    z-index: 1;
+}
+
+.scrollbuttom {
+    background-color: red;
+    display: flex;
+    position:fixed ;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    left: 15%;
+    margin-top: -0.7%;
+    background-color: rgba(106, 204, 250, 0.1);
+    height:10%;
+    
+}
+
+.linkScroll{
+    margin: 4% 1%;
+    color:  darkblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    width: 180px;
+    height: 72%;
+    background-color: blue;
+    transition: all 0.25s ease-in;
+    background-color: rgba(106, 204, 250, 0.9);
+    padding: -2% -3%;
+    
+}
+
+.linkScroll:hover{
+    background-color: rgb(29, 32, 207);
+    transition: all 0.5s;
+    color: white;
 }
 
 
@@ -103,7 +171,7 @@ a.aaa:hover {
 
 label {
     padding: 15px;
-    z-index: 1;
+    z-index: 2;
 }
 
 ul {
