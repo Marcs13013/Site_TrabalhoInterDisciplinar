@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -47,6 +47,8 @@ h2 {
 img.tipo1 {
     border: blue 2px solid;
     border-radius: 30%;
+    width: 260px;
+    height: 230px;
 }
 
 
@@ -117,38 +119,54 @@ input[type="checkbox"] {
 }
 
 .scrollbuttom {
-    background-color: red;
     display: flex;
-    position:fixed ;
     align-content: center;
     text-align: center;
     align-items: center;
-    left: 15%;
-    margin-top: -0.7%;
+    left: 18%;
+    height: 72%;
     background-color: rgba(106, 204, 250, 0.1);
-    height:10%;
-    
 }
 
-.linkScroll{
+.setapracima {
+    position: fixed;
+    margin-top: 42%;
+    margin-left: 8px;
+    background-color: rgba(169, 169, 169, 0.4);
+    border-top: 1px solid;
+    border-radius: 45%;
+    width: 72px;
+    height: 72px;
+}
+
+.setapracima:hover{
+    background-color: rgba(169, 169, 175, 0.7);
+    transition: all 0.5s;
+    border-top: 3px solid;
+    margin-top: 41%;
+}
+
+.linkScroll {
     margin: 4% 1%;
-    color:  darkblue;
+    color: darkblue;
     text-decoration: none;
     text-align: center;
     font-size: 17px;
     width: 180px;
     height: 72%;
-    background-color: blue;
     transition: all 0.25s ease-in;
-    background-color: rgba(106, 204, 250, 0.9);
+    background-color: rgba(106, 204, 250, 0.3);
     padding: -2% -3%;
+    padding-top: 8px ;
     
 }
 
-.linkScroll:hover{
+.linkScroll:hover {
     background-color: rgb(29, 32, 207);
     transition: all 0.5s;
     color: white;
+    border-radius: 32% 0% 32% 0%;
+    border: 1px solid aliceblue;
 }
 
 
