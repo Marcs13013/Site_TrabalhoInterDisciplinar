@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     overflow-x: hidden;
     margin: 0;
@@ -16,6 +12,12 @@ body {
     text-align: center;
 }
 
+.titulo2 {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+}
+
 h2 {
     justify-content: center;
     text-align: center;
@@ -24,8 +26,9 @@ h2 {
 .introducao {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin: 0% 6%;
+    margin: 0% 7%;
 }
+
 
 .introducao2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -42,6 +45,13 @@ h2 {
     margin-bottom: 8%;
     display: flex;
     margin-right: 3%;
+}
+
+.introducao4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0% 10%;
+
 }
 
 img.tipo1 {
@@ -116,6 +126,9 @@ input[type="checkbox"] {
     left: -300px;
     transition: all .8s;
     z-index: 1;
+    border-bottom-right-radius: 13%;
+    border-bottom: 1px dashed blue;
+    border-right: 1px dashed blue;
 }
 
 .scrollbuttom {
@@ -129,6 +142,7 @@ input[type="checkbox"] {
 }
 
 .setapracima {
+
     position: fixed;
     margin-top: 42%;
     margin-left: 8px;
@@ -139,7 +153,7 @@ input[type="checkbox"] {
     height: 72px;
 }
 
-.setapracima:hover{
+.setapracima:hover {
     background-color: rgba(169, 169, 175, 0.7);
     transition: all 0.5s;
     border-top: 3px solid;
@@ -154,10 +168,9 @@ input[type="checkbox"] {
     font-size: 17px;
     width: 180px;
     height: 72%;
-    transition: all 0.25s ease-in;
     background-color: rgba(106, 204, 250, 0.3);
     padding: -2% -3%;
-    padding-top: 8px ;
+    padding-top: 8px;
     
 }
 
@@ -168,7 +181,6 @@ input[type="checkbox"] {
     border-radius: 32% 0% 32% 0%;
     border: 1px solid aliceblue;
 }
-
 
 
 a.aaa {
@@ -184,7 +196,7 @@ a.aaa:hover {
     background-color: rgba(211, 211, 211, .9);
     color: blue;
     font-size: 19px;
-
+    
 }
 
 label {
@@ -199,7 +211,21 @@ ul {
     left: -40px;
 }
 
+.BD {
+    width: 1100px;
+    height: 73 0px;
+    display: grid;
+    border: 3px double rgba(59, 209, 255, 0.6);
+    border-radius: 15%;
+    
+}
 
+.TextoBD {
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
 
 
 .fundo {
@@ -227,3 +253,11 @@ ul {
     width: 85px;
     justify-content: right;
 }
+
+html {
+    scroll-behavior: smooth;
+    transition: all .8s ease-in-out;
+}
+
+
+
