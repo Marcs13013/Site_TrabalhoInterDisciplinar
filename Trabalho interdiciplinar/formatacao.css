@@ -107,6 +107,9 @@ img.entrevista {
     justify-content: space-around;
 }
 
+audio{
+    z-index: 3;
+}
 
 input[type="checkbox"]:checked~nav {
     transform: translateX(300px);

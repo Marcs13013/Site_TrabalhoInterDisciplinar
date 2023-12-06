@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="formatacao.css">
     <style>
-   
+
     </style>
     <style>
         #caixa {
@@ -103,7 +103,10 @@
 
     <center>
         <div class="AAA">
-
+            <audio src="imagensSite/Pra Testa Seu Paredão - Super Nintendo -  Top Gear.mp3" id="audio1"
+                width="100%"></audio>
+            <audio src="imagensSite/coin.mp3" id="audioCoin"></audio>
+            <audio src="imagensSite/car_crash.mp3" id="audioBatida"></audio>
 
             <div id="caixa">
                 <img id="carro" src="Imagens/carro.png" alt="carro">
@@ -121,11 +124,16 @@
 
         let botao = document.querySelector("#botao")
 
-        botao.addEventListener("click", Iniciar)
+        botao.addEventListener("click", function () {
+            let audio = document.querySelector("#audio1")
+            audio.play()
+            Iniciar()
+        })
+        let audioBatida = document.querySelector("#audioBatida")
+        let audioMoeda = document.querySelector("#audioCoin")
 
 
         function Iniciar() {
-
             let caixaJogo = document.getElementById("caixa")
             let carro = document.getElementById("carro")
             let pontuacaoDisplay = document.getElementById("pontuacao")
@@ -152,6 +160,8 @@
                     atualizarposicaocarro();
                 }
             });
+
+
             // moeda1
             function mudarImagemMoeda(moeda, imagem) {
                 moeda.style.backgroundImage = `url('${imagem}')`;
@@ -176,12 +186,12 @@
                         caixaJogo.removeChild(moeda);
                         pontuacao++;
                         pontuacaoDisplay.textContent = pontuacao;
+                        audioMoeda.play()
 
                         if (pontuacao >= 8) {
 
                             clearInterval(moedaIntervalo);
                             gameOver2();
-
                         }
                     }
 
@@ -216,10 +226,12 @@
                         caixaJogo.removeChild(moeda2);
                         pontuacao1++;
                         pontuacaoDisplay1.textContent = pontuacao1;
+                        audioMoeda.play(audioMoeda)
 
                         if (pontuacao1 >= 8) {
                             clearInterval(moedaIntervalo);
                             gameOver3();
+
                         }
                     }
                     if (Topo >= caixaJogo.clientHeight - moeda2.clientHeight) {
@@ -249,7 +261,9 @@
 
                     if (checarColisao(barreira, carro)) {
                         clearInterval(barreiraIntervalo);
+                        audioBatida.play()
                         gameOver();
+
                     }
 
                     if (Topo >= caixaJogo.clientHeight - 80) {
@@ -280,7 +294,10 @@
 
                     if (checarColisao(barreira2, carro)) {
                         clearInterval(barreira2Intervalo);
+                        audioBatida.play()
+
                         gameOver1();
+
                     }
 
                     if (Topo >= caixaJogo.clientHeight - 90) {
@@ -315,6 +332,7 @@
                 alert("Acabou! Você foi para Apple e mudou o mundo");
                 document.location.reload();
             }
+
 
             setInterval(criarMoeda, velocidade);
             setInterval(criarMoeda2, velocidade);
